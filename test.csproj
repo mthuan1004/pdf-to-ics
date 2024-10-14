@@ -372,8 +372,8 @@
     <Compile Include="MonHoc.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XuLyData.cs" />
     <Compile Include="XuLyExcel.cs" />
+    <Compile Include="XuLyICS.cs" />
     <EmbeddedResource Include="Form1.aa.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
