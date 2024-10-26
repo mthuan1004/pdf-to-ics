@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -129,7 +130,7 @@ namespace test
        public static List<MonHoc> ProcessMonHocData(IExcelDataReader reader)
         {
             var lichDay = new List<MonHoc>();
-
+           
             while (reader.Read())
             {
                 string cellValue = reader.GetString(0);
@@ -151,6 +152,22 @@ namespace test
             }
 
             return lichDay;
+        }
+
+        private bool Compare(string ma)
+        {
+
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory; //lấy đường dẫn của thư mục nơi file .exe đang chạy, sau đó bạn có thể xây dựng đường dẫn file dựa trên nó.
+            string fileMaMon = Path.Combine(baseDirectory, "maMon.txt"); // tìm file maMon trong đường dẫn .exe
+            DocFile docFile = new DocFile(fileMaMon);
+            List<string> maMon = docFile.ReadCodesFromFile();
+            foreach (string line in maMon) {
+                if(line == ma)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

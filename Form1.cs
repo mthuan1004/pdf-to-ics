@@ -29,6 +29,7 @@ namespace test
             InitializeComponent();
             ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
             ToolTip tip = new ToolTip() { IsBalloon = true };
+            DocFile fileHandler = new DocFile("maMon.txt");
             tip.SetToolTip(btnChonFile, "Chọn file PDF cần chuyển đổi");
             tip.SetToolTip(btnCut, "Chuyển đổi ra ICS");
         }
@@ -42,10 +43,19 @@ namespace test
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    txtPDFPath.Text = openFileDialog.FileName;
+                    // Kiểm tra nếu đuôi tệp không phải PDF
+                    if (!openFileDialog.FileName.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase))
+                    {
+                        MessageBox.Show("Vui lòng chọn một tệp PDF.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    else
+                    {
+                        txtPDFPath.Text = openFileDialog.FileName;
+                    }
                 }
             }
         }
+
         private void btnCut_Click(object sender, EventArgs e)
         {
             // Kiểm tra xem người dùng đã chọn file Excel chưa
@@ -59,7 +69,7 @@ namespace test
             string outputPDFFilePath = Path.ChangeExtension(PDFFilePath, ".xlsx");
             string outputDirectory = Path.GetDirectoryName(PDFFilePath);
             XuLyExcel xulyExcel = new XuLyExcel();
-            XuLyICS xulyICS = new XuLyICS();
+   
             try
             {
                 // Yêu cầu người dùng nhập tên thư mục
