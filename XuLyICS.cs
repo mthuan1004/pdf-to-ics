@@ -19,6 +19,7 @@ namespace test
 
         public static void GenerateIcsFile(List<LichDayGiangVien> lichDayGiangViens, string outputDirectory)
         {
+            
             foreach (var lichDayGiangVien in lichDayGiangViens)
             {
                 string giangVienFileName = Path.Combine(outputDirectory, $"{lichDayGiangVien.GiangVien.TenGiangVien}.ics");
@@ -225,8 +226,6 @@ namespace test
                     return "";
             }
         }
-
-
         
     }
 }

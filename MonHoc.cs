@@ -62,13 +62,15 @@ namespace test
 
         public static MonHoc ProcessMonHoc(string cellValue)
         {
+            List<string> maMonList = new XuLyFile().ReadCodesFromFile();
+
             // Xử lý dòng để lấy thông tin về môn học
             // Ví dụ:
             string[] parts = cellValue.Split(' ');
 
             // Lấy mã môn học
             string maMonHoc = parts[0];
-             
+
             // Lấy nhóm
             string nhom = parts[1];
 
@@ -112,7 +114,7 @@ namespace test
             string tenMonHoc = "";
             for (int i = parts.Length - 8; i > 2; i--)
             {
-                if (!parts[i].StartsWith("CS") && !parts[i].Contains("/"))
+                if (!CompareMaMon(parts[i],maMonList) && !parts[i].Contains("/"))
                 {
                     tenMonHoc = parts[i] + " " + tenMonHoc;
                 }
@@ -127,47 +129,39 @@ namespace test
             return new MonHoc(maMonHoc, nhom, tenMonHoc, thoiGian, ngayBatDau, ngayKetThuc, phong, tietHoc, thu, siSo, lop);
         }
 
-       public static List<MonHoc> ProcessMonHocData(IExcelDataReader reader)
+        public static List<MonHoc> ProcessMonHocData(IExcelDataReader reader)
         {
             var lichDay = new List<MonHoc>();
-           
+            XuLyFile writeFile = new XuLyFile();
+            List<string> maMonList = new XuLyFile().ReadCodesFromFile();
             while (reader.Read())
             {
                 string cellValue = reader.GetString(0);
-
-                if (cellValue == null || string.IsNullOrWhiteSpace(cellValue))
-                {
-                    cellValue = "CS"; // Default to "CS" if cell value is empty
-                }
 
                 if (cellValue.StartsWith("Thời gian học:"))
                 {
                     break; // Exit when reaching the time schedule line
                 }
-                else if (cellValue.StartsWith("CS") || cellValue.StartsWith("GS"))
+                else if (CompareMaMon(cellValue, maMonList))
                 {
                     var monHoc = ProcessMonHoc(cellValue); // Process subject based on the value
                     lichDay.Add(monHoc); // Add subject information to the schedule
                 }
+                else
+                {
+                    writeFile.AppendToFile(cellValue);
+
+                }
+
             }
 
             return lichDay;
         }
 
-        private bool Compare(string ma)
+  
+        public static bool CompareMaMon(string str, List<string> maMonList)
         {
-
-            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory; //lấy đường dẫn của thư mục nơi file .exe đang chạy, sau đó bạn có thể xây dựng đường dẫn file dựa trên nó.
-            string fileMaMon = Path.Combine(baseDirectory, "maMon.txt"); // tìm file maMon trong đường dẫn .exe
-            DocFile docFile = new DocFile(fileMaMon);
-            List<string> maMon = docFile.ReadCodesFromFile();
-            foreach (string line in maMon) {
-                if(line == ma)
-                {
-                    return true;
-                }
-            }
-            return false;
+            return maMonList.Any(ma => str.StartsWith(ma));
         }
     }
 }

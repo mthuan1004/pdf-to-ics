@@ -160,7 +160,7 @@
     <value>Center</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>659, 469</value>
+    <value>663, 469</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -192,9 +192,21 @@
   <metadata name="lectureName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="lectureName.HeaderText" xml:space="preserve">
+    <value>Tên giảng viên</value>
+  </data>
+  <data name="lectureName.Width" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
   <metadata name="filePath.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="filePath.HeaderText" xml:space="preserve">
+    <value>Đường dẫn</value>
+  </data>
+  <data name="filePath.Width" type="System.Int32, mscorlib">
+    <value>400</value>
+  </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 82</value>
   </data>
@@ -578,23 +590,5 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="lectureName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="lectureName.HeaderText" xml:space="preserve">
-    <value>Tên giảng viên</value>
-  </data>
-  <data name="lectureName.Width" type="System.Int32, mscorlib">
-    <value>170</value>
-  </data>
-  <metadata name="filePath.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="filePath.HeaderText" xml:space="preserve">
-    <value>Đường dẫn</value>
-  </data>
-  <data name="filePath.Width" type="System.Int32, mscorlib">
-    <value>400</value>
   </data>
 </root>

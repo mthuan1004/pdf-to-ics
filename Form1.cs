@@ -29,7 +29,7 @@ namespace test
             InitializeComponent();
             ExcelPackage.LicenseContext = OfficeOpenXml.LicenseContext.NonCommercial;
             ToolTip tip = new ToolTip() { IsBalloon = true };
-            DocFile fileHandler = new DocFile("maMon.txt");
+            XuLyFile fileHandler = new XuLyFile("maMon.txt");
             tip.SetToolTip(btnChonFile, "Chọn file PDF cần chuyển đổi");
             tip.SetToolTip(btnCut, "Chuyển đổi ra ICS");
         }
@@ -69,7 +69,7 @@ namespace test
             string outputPDFFilePath = Path.ChangeExtension(PDFFilePath, ".xlsx");
             string outputDirectory = Path.GetDirectoryName(PDFFilePath);
             XuLyExcel xulyExcel = new XuLyExcel();
-   
+
             try
             {
                 // Yêu cầu người dùng nhập tên thư mục
@@ -85,17 +85,19 @@ namespace test
                 Directory.CreateDirectory(icsFolder);
 
                 //Quy trình xử lý file từ PDF sang ICS 
-                xulyExcel.ConvertPdfToExcel(PDFFilePath,outputPDFFilePath);
+                xulyExcel.ConvertPdfToExcel(PDFFilePath, outputPDFFilePath);
                 xulyExcel.SplitExcelFile(outputPDFFilePath);
 
                 List<LichDayGiangVien> lichDayGiangViens = LichDayGiangVien.ProcessExcelData(outputPDFFilePath);
+                if (lichDayGiangViens.Count > 0)
+                {
+                    XuLyICS.GenerateIcsFile(lichDayGiangViens, icsFolder);
 
-                XuLyICS.GenerateIcsFile(lichDayGiangViens, icsFolder);
+                    LoadIcsFilesToDataGridView(icsFolder);
 
-                LoadIcsFilesToDataGridView(icsFolder);
-
-                // Hiển thị thông báo khi hoàn thành
-                MessageBox.Show($"Danh sách lịch dạy đã được lưu vào thư mục '{folderName}'.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Hiển thị thông báo khi hoàn thành
+                    MessageBox.Show($"Danh sách lịch dạy đã được lưu vào thư mục '{folderName}'.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {

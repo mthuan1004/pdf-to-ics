@@ -25,6 +25,8 @@ namespace test
         {
             string tenGiangVien = "";
             string maGiangVien = "";
+            string soDienThoai = "";
+            string Khoa = "";
             string[] separators = new string[] { "Cán bộ giảng dạy: ", "CBGD ", " (" };
             string[] result = cellValue.Split(separators, StringSplitOptions.RemoveEmptyEntries);
 
@@ -39,6 +41,7 @@ namespace test
             {
                 tenGiangVien = result[0].Trim();
                 maGiangVien = result[1].Trim(')');
+          
 
             }
 
