@@ -7,12 +7,20 @@
       "RelativeMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|solutionrelative:monhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|e:\\c#\\pdf-to-ics\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|e:\\c#\\pdf-to-ics\\xulyexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|solutionrelative:xulyexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|E:\\C#\\pdf-to-ics\\xulyfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|solutionrelative:xulyfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|E:\\C#\\pdf-to-ics\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|e:\\c#\\pdf-to-ics\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "E:\\C#\\pdf-to-ics\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "E:\\C#\\pdf-to-ics\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAIwFgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAUwGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-21T18:09:12.95Z",
               "IsPinned": true,
@@ -56,13 +64,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "XuLyExcel.cs",
+              "DocumentMoniker": "E:\\C#\\pdf-to-ics\\XuLyExcel.cs",
+              "RelativeDocumentMoniker": "XuLyExcel.cs",
+              "ToolTip": "E:\\C#\\pdf-to-ics\\XuLyExcel.cs",
+              "RelativeToolTip": "XuLyExcel.cs",
+              "ViewState": "AgIAAGwBAAAAAAAAAAAAAIcBAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T20:40:50.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\C#\\pdf-to-ics\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\C#\\pdf-to-ics\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T18:28:00.172Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "XuLyFile.cs",
               "DocumentMoniker": "E:\\C#\\pdf-to-ics\\XuLyFile.cs",
               "RelativeDocumentMoniker": "XuLyFile.cs",
               "ToolTip": "E:\\C#\\pdf-to-ics\\XuLyFile.cs",
               "RelativeToolTip": "XuLyFile.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAswC0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T12:11:06.428Z",
               "EditorCaption": ""
@@ -73,9 +106,9 @@
               "Title": "MonHoc.cs",
               "DocumentMoniker": "E:\\C#\\pdf-to-ics\\MonHoc.cs",
               "RelativeDocumentMoniker": "MonHoc.cs",
-              "ToolTip": "E:\\C#\\pdf-to-ics\\MonHoc.cs*",
-              "RelativeToolTip": "MonHoc.cs*",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
+              "ToolTip": "E:\\C#\\pdf-to-ics\\MonHoc.cs",
+              "RelativeToolTip": "MonHoc.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAADwv5wAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-14T07:20:14.13Z",
               "EditorCaption": ""

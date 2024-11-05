@@ -40,8 +40,14 @@ namespace test
                     {
                         var giangVien = GiangVien.ProcessGiangVien(cellValue);
                         var lichDay = MonHoc.ProcessMonHocData(reader); // Refactored into a new method
-
+                        if(lichDay == null)
+                        {
+                            return lichDayGiangViens;
+                        }
+                        else
+                        {
                         lichDayGiangViens.Add(new LichDayGiangVien(giangVien, lichDay)); // Thêm thông tin lịch dạy của giảng viên vào danh sách
+                        }
                     }
                 }
             }

@@ -1,3 +1,9 @@
+E:\C#\pdf-to-ics\obj\Debug\test.csproj.AssemblyReference.cache
+E:\C#\pdf-to-ics\obj\Debug\test.Form1.resources
+E:\C#\pdf-to-ics\obj\Debug\test.Properties.Resources.resources
+E:\C#\pdf-to-ics\obj\Debug\test.Form1.aa.resources
+E:\C#\pdf-to-ics\obj\Debug\test.csproj.GenerateResource.cache
+E:\C#\pdf-to-ics\obj\Debug\test.csproj.CoreCompileInputs.cache
 E:\C#\pdf-to-ics\bin\Debug\libHarfBuzzSharp.dylib
 E:\C#\pdf-to-ics\bin\Debug\x86\libHarfBuzzSharp.dll
 E:\C#\pdf-to-ics\bin\Debug\x64\libHarfBuzzSharp.dll
@@ -106,12 +112,6 @@ E:\C#\pdf-to-ics\bin\Debug\System.Security.Permissions.xml
 E:\C#\pdf-to-ics\bin\Debug\System.Security.Principal.Windows.xml
 E:\C#\pdf-to-ics\bin\Debug\System.Threading.Tasks.Extensions.xml
 E:\C#\pdf-to-ics\bin\Debug\System.ValueTuple.xml
-E:\C#\pdf-to-ics\obj\Debug\test.csproj.AssemblyReference.cache
-E:\C#\pdf-to-ics\obj\Debug\test.Form1.resources
-E:\C#\pdf-to-ics\obj\Debug\test.Properties.Resources.resources
-E:\C#\pdf-to-ics\obj\Debug\test.Form1.aa.resources
-E:\C#\pdf-to-ics\obj\Debug\test.csproj.GenerateResource.cache
-E:\C#\pdf-to-ics\obj\Debug\test.csproj.CoreCompileInputs.cache
 E:\C#\pdf-to-ics\obj\Debug\aa\test.resources.dll
 E:\C#\pdf-to-ics\obj\Debug\test.csproj.Up2Date
 E:\C#\pdf-to-ics\obj\Debug\test.exe

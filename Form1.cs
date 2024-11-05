@@ -84,20 +84,25 @@ namespace test
                 string icsFolder = Path.Combine(outputDirectory, folderName);
                 Directory.CreateDirectory(icsFolder);
 
-                //Quy trình xử lý file từ PDF sang ICS 
                 xulyExcel.ConvertPdfToExcel(PDFFilePath, outputPDFFilePath);
                 xulyExcel.SplitExcelFile(outputPDFFilePath);
-
                 List<LichDayGiangVien> lichDayGiangViens = LichDayGiangVien.ProcessExcelData(outputPDFFilePath);
-                if (lichDayGiangViens.Count > 0)
+                if (XuLyExcel.countMaMon(outputPDFFilePath) > 0)
                 {
-                    XuLyICS.GenerateIcsFile(lichDayGiangViens, icsFolder);
+                XuLyICS.GenerateIcsFile(lichDayGiangViens, icsFolder);
+                LoadIcsFilesToDataGridView(icsFolder);
 
-                    LoadIcsFilesToDataGridView(icsFolder);
+                // Hiển thị thông báo khi hoàn thành
+                MessageBox.Show($"Danh sách lịch dạy đã được lưu vào thư mục '{folderName}'.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Hiển thị thông báo khi hoàn thành
-                    MessageBox.Show($"Danh sách lịch dạy đã được lưu vào thư mục '{folderName}'.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 }
+                else
+                {
+
+                    MessageBox.Show("Mã môn không tồn tại trong file maMon.txt","Lỗi",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
             }
             catch (Exception ex)
             {
@@ -186,8 +191,6 @@ namespace test
             }
         }
 
-        //Cắt file từng giảng viên
-       
         //Kiểm tra Sheet GV tồn tại
         private bool IsSheetNameExists(ExcelPackage package, string sheetName)
         {
@@ -240,14 +243,5 @@ namespace test
 
             return lecturerName;
         }
-
-       
-
-        // New method to handle processing of MonHoc including defaulting to "CS" if empty
-        
-
-       
-
     }
- 
 }

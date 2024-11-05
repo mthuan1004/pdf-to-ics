@@ -362,6 +362,40 @@ namespace test
             }
         }
 
+        public static int countMaMon(string inputExcel)
+        {
+            int count = 0;
+            if (!File.Exists(inputExcel))
+            {
+                throw new FileNotFoundException("File Excel không tồn tại.");
+            }
+
+            // Đọc file Excel
+            using (var package = new ExcelPackage(new FileInfo(inputExcel)))
+            {
+                var worksheet = package.Workbook.Worksheets[0]; // Giả sử dùng sheet đầu tiên
+                int rowCount = worksheet.Dimension.Rows;
+                int colCount = worksheet.Dimension.Columns;
+                XuLyFile writeFile = new XuLyFile();
+                List<string> maMonList = new XuLyFile().ReadCodesFromFile();
+                // Duyệt từng dòng
+                for (int row = 1; row <= rowCount; row++)
+                {
+                    for (int col = 1; col <= colCount; col++)
+                    {
+                        var cellValue = worksheet.Cells[row, col].Text;
+
+                        // Kiểm tra nếu ô không rỗng và chứa ký tự cần tìm
+                        if (!string.IsNullOrEmpty(cellValue) && MonHoc.CompareMaMon(cellValue,maMonList))
+                        {
+                            count++;
+                            break; // Tìm thấy ký tự trong dòng, dừng kiểm tra dòng này và chuyển sang dòng tiếp theo
+                        }
+                    }
+                }
+            }
+            return count;
+        }
 
     }
 }
