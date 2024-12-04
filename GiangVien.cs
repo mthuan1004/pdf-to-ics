@@ -21,6 +21,31 @@ namespace test
             Khoa = khoa;
         }
 
-        
+        public static GiangVien ProcessGiangVien(string cellValue)
+        {
+            string tenGiangVien = "";
+            string maGiangVien = "";
+            string soDienThoai = "";
+            string Khoa = "";
+            string[] separators = new string[] { "Cán bộ giảng dạy: ", "CBGD ", " (" };
+            string[] result = cellValue.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+
+
+            // Trích xuất thông tin
+            List<string> lstr = result.ToList();
+            if (lstr.Count() < 2)
+            {
+                tenGiangVien = cellValue;
+            }
+            else
+            {
+                tenGiangVien = result[0].Trim();
+                maGiangVien = result[1].Trim(')');
+          
+
+            }
+
+            return new GiangVien(maGiangVien, tenGiangVien, "sdt", "khoa");
+        }
     }
 }

@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\C#\\test\\",
+  "WorkspaceRootPath": "E:\\C#\\pdf-to-ics\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\C#\\test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|E:\\C#\\pdf-to-ics\\monhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|solutionrelative:monhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\C#\\test\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|e:\\c#\\pdf-to-ics\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\C#\\test\\LichDayGiangVien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LichDayGiangVien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|e:\\c#\\pdf-to-ics\\xulyexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|solutionrelative:xulyexcel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|E:\\C#\\pdf-to-ics\\xulyfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|solutionrelative:xulyfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|e:\\c#\\pdf-to-ics\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{14C71586-67A1-47C1-A23E-EF942220364A}|test.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +30,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\C#\\pdf-to-ics\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\C#\\pdf-to-ics\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAUwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T18:09:12.95Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -42,39 +64,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "XuLyExcel.cs",
+              "DocumentMoniker": "E:\\C#\\pdf-to-ics\\XuLyExcel.cs",
+              "RelativeDocumentMoniker": "XuLyExcel.cs",
+              "ToolTip": "E:\\C#\\pdf-to-ics\\XuLyExcel.cs",
+              "RelativeToolTip": "XuLyExcel.cs",
+              "ViewState": "AgIAAGwBAAAAAAAAAAAAAIcBAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T20:40:50.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\C#\\test\\Form1.cs",
+              "DocumentMoniker": "E:\\C#\\pdf-to-ics\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\C#\\test\\Form1.cs [Design]",
+              "ToolTip": "E:\\C#\\pdf-to-ics\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T06:37:11.283Z",
+              "WhenOpened": "2024-11-05T18:28:00.172Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LichDayGiangVien.cs",
-              "DocumentMoniker": "E:\\C#\\test\\LichDayGiangVien.cs",
-              "RelativeDocumentMoniker": "LichDayGiangVien.cs",
-              "ToolTip": "E:\\C#\\test\\LichDayGiangVien.cs",
-              "RelativeToolTip": "LichDayGiangVien.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "XuLyFile.cs",
+              "DocumentMoniker": "E:\\C#\\pdf-to-ics\\XuLyFile.cs",
+              "RelativeDocumentMoniker": "XuLyFile.cs",
+              "ToolTip": "E:\\C#\\pdf-to-ics\\XuLyFile.cs",
+              "RelativeToolTip": "XuLyFile.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAswC0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T02:36:50.003Z"
+              "WhenOpened": "2024-10-23T12:11:06.428Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\C#\\test\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "E:\\C#\\test\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAAAK0AAAA+AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MonHoc.cs",
+              "DocumentMoniker": "E:\\C#\\pdf-to-ics\\MonHoc.cs",
+              "RelativeDocumentMoniker": "MonHoc.cs",
+              "ToolTip": "E:\\C#\\pdf-to-ics\\MonHoc.cs",
+              "RelativeToolTip": "MonHoc.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAADwv5wAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T18:09:12.95Z",
+              "WhenOpened": "2024-10-14T07:20:14.13Z",
               "EditorCaption": ""
             }
           ]
